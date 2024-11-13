@@ -8,18 +8,29 @@ import MenuIcon from "@/components/MenuHamburguesaIcono.astro";
 
 <section class="header bg-blue p-3">
   <div class="container-central">
-    <div class="container sd:mx-auto flex items-center justify-around">
-      <ul>
+    <div
+      class="container sd:mx-auto flex items-center justify-center md:justify-between"
+    >
+      <ul class="p-2">
         <li class="flex items-center justify-end">
           <Phone />
-          <a class="text-white font-bold" href="tel:4654-8794">4654-8794</a>
+          <a
+            class="text-white font-bold text-lg ml-1 no-underline md:hidden"
+            href="tel:4654-8794">4654-8794</a
+          >
+          <a
+            class="sd: hidden md:flex text-white font-bold text-lg ml-1 no-underline"
+            href="tel:4654-8794"
+            >4654-8794 | 4654-7065
+          </a>
         </li>
       </ul>
-      <ul>
+      <ul class="p-2">
         <li class="flex items-center justify-center">
           <MailImg />
-          <a class="text-white font-bold" href="mailto:info@vianhe.com;"
-            >info@vianhe.com</a
+          <a
+            class="text-white font-bold text-lg ml-1 no-underline"
+            href="mailto:info@vianhe.com;">info@vianhe.com</a
           >
         </li>
       </ul>
@@ -30,23 +41,30 @@ import MenuIcon from "@/components/MenuHamburguesaIcono.astro";
     </div>
   </div>
 </section>
-<section class="header-nav p-2">
+<section class="header-nav p-2 overflow-x-hidden">
   <div class="container-central">
     <div class="container sd:mx-auto">
-      <nav class="flex justify-between">
-        <div>
-          <a href="#">
+      <nav class="flex p-2 items-start justify-between md:items-center">
+        <div class="flex-shrink-0 md:flex-wrap">
+          <a class="" href="#">
             <Image src={img} alt="Vianhe Logo" />
           </a>
         </div>
-        <div class="hidden md:flex">
-          <a href="#portones">Portones Cortafuego</a>
-          <a href="#puertas">Puertas Cortafuego</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#productos">Productos</a>
-          <a href="#contacto">Contacto</a>
+        <div
+          id="nav"
+          class="hidden md:flex items-center justify-center space-x-4 ml-auto font-bold"
+        >
+          <a class="no-underline text-purple ml-6" href="#portones"
+            >Portones Cortafuego</a
+          >
+          <a class="no-underline text-purple" href="#puertas"
+            >Puertas Cortafuego</a
+          >
+          <a class="no-underline text-purple" href="#servicios">Servicios</a>
+          <a class="no-underline text-purple" href="#productos">Productos</a>
+          <a class="no-underline text-purple" href="#contacto">Contacto</a>
         </div>
-        <div>
+        <div class="flex-shrink-0">
           <MenuIcon />
         </div>
       </nav>
