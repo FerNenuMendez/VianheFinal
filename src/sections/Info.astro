@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../../public/puertas-cortafuego/img3.jpg";
+---
+
+<section id="portones" class="h-full p-4 bg-blue text-white">
+  <div class="container-central h-full">
+    <article class="h-full">
+      <div class="flex flex-col items-center justify-center">
+        <h2 class="font-semibold text-xl drop-shadow-lg">
+          Portones Cortafuego
+        </h2>
+        <p class="font-semibold text-lg text-center pt-2">
+          Las hojas de los portones cortafuego VIANHE están realizadas en doble
+          chapa de acero de las mismas características, forma constructiva y
+          aislación térmica que fueran aprobadas por el I.N.T.I. para todas
+          nuestras puertas cortafuego. <br /> Portones manuales contrapesados: todos
+          los modelos de portón cortafuego tienen la posibilidad de abrirse y cerrarse
+          manualmente como cualquier portón convencional.
+        </p>
+        <button
+          class="font-semibold drop-shadow-lg text-white font-bold p-2 m-4 rounded btn"
+        >
+          Conocer mas...
+        </button>
+      </div>
+    </article>
+  </div>
+</section>
+<section id="puertas" class="h-full p-4 bg-purple text-white">
+  <article class="container-central h-full">
+    <Image src={img1} alt="Imagen de puerta" class="p-4" />
+    <div class="flex flex-col items-center justify-center pt-4">
+      <h2 class="font-semibold text-xl drop-shadow-lg">Puertas Cortafuego</h2>
+      <p class="font-semibold text-lg text-center pt-2">
+        Las Puertas Cortafuego VIANHE han sido diseñadas y construidas para
+        resistir al fuego sin permitir el paso de humos, llamas y temperatura
+        cumpliendo con los criterios establecidos en las normas IRAM
+        11949,11950,11951 y 11952 / ISO 834. <br />Las Puertas Cortafuego VIANHE
+        poseen certificado de aprobación extendido por el I.N.T.I. (Instituto
+        Nacional de Tecnología Industrial) como resultado de haber superado los
+        ensayos que este ente nacional realiza según los requerimientos de las
+        citadas normas IRAM.
+      </p>
+      <button
+        class="font-semibold drop-shadow-lg text-white font-bold p-2 m-4 rounded btn"
+      >
+        Conocer mas...
+      </button>
+    </div>
+  </article>
+</section>
+<style>
+  .btn {
+    transition: transform 0.4s;
+    background-color: rgb(58, 58, 58);
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    background-color: blueviolet;
+  }
+</style>
