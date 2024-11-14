@@ -1,11 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import img1 from "../../public/puertas-cortafuego/img3.jpg";
+import img2 from "../../public/portones-cortafuegos/img4.jpg";
 ---
 
 <section id="portones" class="h-full p-4 bg-blue text-white">
   <div class="container-central h-full">
-    <article class="h-full">
+    <article class="h-full md:flex items-center justify-center">
       <div class="flex flex-col items-center justify-center">
         <h2 class="font-semibold text-xl drop-shadow-lg">
           Portones Cortafuego
@@ -24,12 +25,21 @@ import img1 from "../../public/puertas-cortafuego/img3.jpg";
           Conocer mas...
         </button>
       </div>
+      <Image
+        src={img2}
+        alt="Imagen de puerta"
+        class="hidden md:flex w-2/4 p-4 h-2/4 drop-shadow-lg"
+      />
     </article>
   </div>
 </section>
 <section id="puertas" class="h-full p-4 bg-purple text-white">
-  <article class="container-central h-full">
-    <Image src={img1} alt="Imagen de puerta" class="p-4 h-2/4" />
+  <article class="container-central h-full md:flex items-center justify-center">
+    <Image
+      src={img1}
+      alt="Imagen de puerta"
+      class="p-4 h-2/4 drop-shadow-lg md:w-2/4"
+    />
     <div class="flex flex-col items-center justify-center pt-4">
       <h2 class="font-semibold text-xl drop-shadow-lg">Puertas Cortafuego</h2>
       <p class="font-semibold text-lg text-center pt-1">
