@@ -6,7 +6,7 @@ import MailImg from "@/components/MailImg.astro";
 import MenuIcon from "@/components/MenuHamburguesaIcono.astro";
 ---
 
-<section class="header bg-blue">
+<!-- <section class="header bg-blue">
   <div class="container-central">
     <div
       class="container sd:mx-auto flex items-center justify-end md:justify-end"
@@ -40,7 +40,7 @@ import MenuIcon from "@/components/MenuHamburguesaIcono.astro";
       >
     </div>
   </div>
-</section>
+</section> -->
 <section class="header-nav p-2 overflow-x-hidden">
   <div class="container-central">
     <div class="container sd:mx-auto">
@@ -54,15 +54,25 @@ import MenuIcon from "@/components/MenuHamburguesaIcono.astro";
           id="nav"
           class="hidden md:flex items-center justify-center space-x-4 ml-auto font-bold"
         >
-          <a class="no-underline text-purple ml-6" href="#portones"
-            >Portones Cortafuego</a
+          <a
+            class="no-underline text-purple ml-6 poppins-medium"
+            href="#portones">Portones Cortafuego</a
           >
-          <a class="no-underline text-purple" href="#puertas"
+          <a class="no-underline text-purple poppins-medium" href="#puertas"
             >Puertas Cortafuego</a
           >
-          <a class="no-underline text-purple" href="#servicios">Servicios</a>
-          <a class="no-underline text-purple" href="#productos">Productos</a>
-          <a class="no-underline text-purple" href="#contacto">Contacto</a>
+          <a class="no-underline text-purple poppins-medium" href="#servicios"
+            >Servicios</a
+          >
+          <a class="no-underline text-purple poppins-medium" href="#productos"
+            >Productos</a
+          >
+          <a class="no-underline text-purple poppins-medium" href="#contacto"
+            ><button
+              class="hidden text-white font-bold bg-purple poppins-medium md:flex p-2 drop-shadow-xl"
+              >CONTACTENOS</button
+            ></a
+          >
         </div>
         <div class="flex-shrink-0">
           <MenuIcon />

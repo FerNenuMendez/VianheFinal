@@ -1,0 +1,72 @@
+---
+import MailImg from "@/components/MailImg-black.astro";
+import Phone from "@/components/Phone-black.astro";
+import Insta from "@/components/Instagram-Logo.astro";
+import Face from "@/components/Facebook.astro";
+---
+
+<section class="footer">
+  <div class="container-central">
+    <div class="flex items-center justify-center md:justify-center">
+      <div
+        class="flex items-start justify-between md:flex-row items-center justify-center"
+      >
+        <!-- Teléfono -->
+        <a href="tel:46548794" id="phone" class="flex items-center mr-4">
+          <Phone />
+          <p class="hidden md:flex poppins-ligth text-white m-0 text-sm">
+            4654-8794 | 4654-7065
+          </p>
+        </a>
+        <!-- Email -->
+        <a
+          href="mailto:info@vianhe.com"
+          id="mail"
+          class="flex items-center mr-4"
+        >
+          <MailImg />
+          <p class="hidden md:flex poppins-ligth text-white m-0 text-sm">
+            info@vianhe.com
+          </p>
+        </a>
+      </div>
+      <div class="flex items-start md:flex-row items-center justify-center">
+        <!-- Instagram -->
+        <a
+          href="https://instagram.com/vianhe_"
+          target="_blank"
+          id="insta"
+          class="flex items-center mr-4"
+        >
+          <Insta />
+          <p class="hidden md:flex poppins-ligth text-white m-0 text-sm">
+            vianhe_
+          </p>
+        </a>
+        <!-- Facebook -->
+        <a
+          href="https://facebook.com/share/18WYQzWQ6o/?mibextid=LOQJ4d"
+          target="_blank"
+          id="face"
+          class="flex items-center mr-4"
+        >
+          <Face />
+          <p class="hidden md:flex poppins-ligth text-white m-0 pl-1 text-sm">
+            Vianhe SA
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .footer {
+    background-color: #b2b089;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+</style>

@@ -4,14 +4,17 @@
 
 <section id="contacto" class="">
   <div class="container-central">
-    <h2 class="p-3 text-center m-3">Contactenos</h2>
-    <section class="flex flex-col items-center justify-center md:flex-row">
-      <div class="w-full px-8">
+    <h2 class="p-3 text-center m-3 poppins-strong">Contactenos</h2>
+    <section
+      class="flex flex-col items-center justify-center w-full md:flex-row"
+    >
+      <div class="w-full md:w-1/3 px-8">
         <form class="flex flex-col">
           <div class="mb-3">
             <label
               for="exampleFormControlInput1"
-              class="form-label font-semibold">Ingrese su Email</label
+              class="form-label font-semibold poppins-medium"
+              >Ingrese su Email</label
             >
             <input
               type="email"
@@ -23,14 +26,15 @@
           <div class="mb-3">
             <label
               for="exampleFormControlTextarea1"
-              class="form-label font-semibold">Dejenos su consulta</label
+              class="form-label font-semibold poppins-medium"
+              >Dejenos su consulta</label
             >
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="10"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary mb-3 md:max-w-sm"
+          <button type="submit" class="btn poppins-medium"
             >Enviar consulta</button
           >
         </form>
@@ -46,7 +50,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="flex items-center justify-center">
           <img src="/mapa.png" alt="Icono de Mapa" class="max-h-10" />
-          <p class="pt-4 pl-2 font-semibold text-sm">
+          <p class="pt-4 pl-2 poppins-medium text-sm">
             Mateo Echegaray 4822 <br /> Caseros. Buenos Aires.
           </p>
         </div>
@@ -54,4 +58,10 @@
     </section>
   </div>
 </section>
-<style></style>
+<style>
+  .btn {
+    background-color: #b2b089;
+    align-self: flex-center;
+    color: white;
+  }
+</style>
