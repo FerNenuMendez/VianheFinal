@@ -7,14 +7,14 @@ import Face from "@/components/Facebook.astro";
 
 <section class="contactNav">
   <div class="container-central">
-    <div class="flex items-center justify-center md:justify-center">
+    <div class="flex items-center justify-center md:justify-end">
       <div
         class="flex items-start justify-between md:flex-row items-center justify-center"
       >
         <!-- Teléfono -->
         <a href="tel:46548794" id="phone" class="flex items-center mr-4">
           <Phone />
-          <p class="hidden md:flex poppins-medium text-white m-0 text-sm">
+          <p class="hidden md:flex poppins-medium text-white m-0 text-xs pl-1">
             4654-8794 | 4654-7065
           </p>
         </a>
@@ -25,7 +25,7 @@ import Face from "@/components/Facebook.astro";
           class="flex items-center mr-4"
         >
           <MailImg />
-          <p class="hidden md:flex poppins-medium text-white m-0 text-sm">
+          <p class="hidden md:flex poppins-medium text-white m-0 text-xs pl-1">
             info@vianhe.com
           </p>
         </a>
@@ -39,7 +39,7 @@ import Face from "@/components/Facebook.astro";
           class="flex items-center mr-4"
         >
           <Insta />
-          <p class="hidden md:flex poppins-medium text-white m-0 text-sm">
+          <p class="hidden md:flex poppins-medium text-white m-0 text-xs">
             vianhe_
           </p>
         </a>
@@ -51,8 +51,8 @@ import Face from "@/components/Facebook.astro";
           class="flex items-center mr-4"
         >
           <Face />
-          <p class="hidden md:flex poppins-medium text-white m-0 pl-1 text-sm">
-            Vianhe SA
+          <p class="hidden md:flex poppins-medium text-white m-0 text-xs">
+            vianhe sa
           </p>
         </a>
       </div>
@@ -61,11 +61,12 @@ import Face from "@/components/Facebook.astro";
 </section>
 <style>
   .contactNav {
-    background-color: #b2b089;
+    background-color: #310480;
     position: sticky;
     top: 0;
     z-index: 10;
     box-shadow: 0px 2px rgba(0, 0, 0, 0.549);
+    padding: 8px;
   }
   .contactNav a {
     text-decoration: none;
