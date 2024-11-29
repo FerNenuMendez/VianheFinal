@@ -4,13 +4,14 @@ import Mouse from "@/components/MouseScrollIcon.astro";
 
 <section id="home" class="m-2 sm:m-4 lg:m-8">
   <div class="container-central">
-    <div class="hidden lg:flex absolute bottom-6 right-40 z-10">
-      <Mouse />
-    </div>
     <div
       id="carouselExampleCaptions"
       class="carousel slide mx-2 sm:mx-4 lg:mx-auto relative"
     >
+      <!-- Posiciona el Mouse abajo a la derecha del carrusel -->
+      <div class="hidden md:flex absolute bottom-40 right-6 z-10">
+        <Mouse />
+      </div>
       <div class="carousel-indicators">
         <button
           type="button"

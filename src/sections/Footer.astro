@@ -1,70 +1,65 @@
 ---
-import MailImg from "@/components/MailImg-black.astro";
-import Phone from "@/components/Phone-black.astro";
-import Insta from "@/components/Instagram-Logo.astro";
-import Face from "@/components/Facebook.astro";
+import logo from "@/components/logocorto.svg";
 ---
 
 <section class="footer-add-two">
-  <div class="container-central">
-    <div class="flex items-center justify-center w-full pt-2">
-      <ul class="text-white text-sm poppins-ligth mr-8">
-        <li class="p-1">
-          <a href="#home">Home</a>
-        </li>
-        <li class="p-1">
-          <a href="#servicios">Servicios</a>
-        </li>
-        <li class="p-1">
-          <a href="#productos">Productos</a>
-        </li>
-        <li class="p-1">
-          <a href="#contacto">Contacto</a>
-        </li>
-      </ul>
-      <ul class="text-white text-sm poppins-ligth mt-4">
-        <li class="p-1">Portones Cortafuego</li>
-        <li class="p-1">Puertas Cortafuego</li>
-        <li class="p-1">Vidrios Cortafuego</li>
-        <li class="p-1">Seccion Aluminio</li>
-        <li class="p-1">Seccion Madera</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="footer-add">
-  <div class="container-central">
-    <div class="flex items-center justify-center">
-      <img src="/logo.png" alt="Logo Vianhe" class="logo" />
-    </div>
-  </div>
-</section>
-<section class="footer-add-tree">
-  <div class="container-central">
-    <div class="flex items-center justify-center">
-      <div class="flex items-center justify-center">
-        <p class="poppins-ligth text-white m-0">©Codeblitz - 2024</p>
+  <div class="container-central flex">
+    <div class="flex items-center justify-center w-full">
+      <div class="flex items-start justify-start w-full p-2">
+        <ul class="text-white text-xs poppins-ligth md:text-sm">
+          <li class="p-1">
+            <a href="#home">Home</a>
+          </li>
+          <li class="p-1">
+            <a href="#servicios">Servicios</a>
+          </li>
+          <li class="p-1">
+            <a href="#productos">Productos</a>
+          </li>
+          <li class="p-1">
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <ul class="text-white text-xs poppins-ligth md:text-sm">
+          <li class="p-1">Portones Cortafuego</li>
+          <li class="p-1">Puertas Cortafuego</li>
+          <li class="p-1">Vidrios Cortafuego</li>
+          <li class="p-1">Seccion Aluminio</li>
+          <li class="p-1">Seccion Madera</li>
+        </ul>
+      </div>
+      <div class="flex items-center justify-center w-1/3 p-1 md:w-full">
+        <img src="/logocorto.svg" alt="Logo Vianhe" class="logo" />
       </div>
     </div>
   </div>
-</section>
+  <section class="footer-add-tree">
+    <div class="container-central">
+      <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center">
+          <p class="poppins-ligth text-white m-0">©Codeblitz - 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<style>
-  .footer-add {
-    background-color: #ffffff;
-  }
-  .footer-add-two {
-    background-color: #330485;
-  }
-  .footer-add-two a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .footer-add-tree {
-    background-color: black;
-  }
-  .logo {
-    max-width: 6rem;
-    padding: 10px;
-  }
-</style>
+  <style>
+    .footer-add {
+      background-color: #ffffff;
+    }
+    .footer-add-two {
+      background-color: #330485;
+    }
+    .footer-add-two a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .footer-add-tree {
+      background-color: black;
+    }
+    .logo {
+      max-width: 8rem;
+      padding: 10px;
+    }
+  </style>
+</section>
